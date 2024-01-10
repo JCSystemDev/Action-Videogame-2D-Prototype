@@ -231,9 +231,10 @@ GameObject:
   - component: {fileID: 3947205518543739990}
   - component: {fileID: 3443731704374927724}
   - component: {fileID: 4691476543563214102}
-  - component: {fileID: 2928940310652417032}
-  - component: {fileID: 6488488727509530964}
-  - component: {fileID: 4686310184303738965}
+  - component: {fileID: 8181851992406009002}
+  - component: {fileID: 329043364312905569}
+  - component: {fileID: 4003778119207892237}
+  - component: {fileID: 5074116967477098630}
   m_Layer: 13
   m_Name: Enemy02
   m_TagString: Untagged
@@ -297,7 +298,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 3ae22299d2f78274fbb86e181e502888, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -622,7 +623,8 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  InitialWeapon: {fileID: 0}
+  InitialWeapon: {fileID: 8621446470696624673, guid: eccd8d48caa678c419b9e1458cae9c92,
+    type: 3}
   CanPickupWeapons: 0
   WeaponAttachment: {fileID: 0}
   ForceWeaponScaleResetOnEquip: 0
@@ -639,7 +641,7 @@ MonoBehaviour:
   NewInputExtendsBuffer: 0
   MaximumBufferDuration: 0.25
   CurrentWeapon: {fileID: 0}
---- !u!114 &2928940310652417032
+--- !u!114 &8181851992406009002
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -648,38 +650,41 @@ MonoBehaviour:
   m_GameObject: {fileID: 4997107258594313203}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76891b3b532f84acaaeed44c357bd00c, type: 3}
+  m_Script: {fileID: 11500000, guid: eec89e4158bf96841b9bc830fc5385ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TargetLayerMask:
-    serializedVersion: 2
-    m_Bits: 512
-  ApplyDamageOnTriggerEnter: 1
-  ApplyDamageOnTriggerStay: 1
-  MinDamageCaused: 10
-  MaxDamageCaused: 10
-  TypedDamages: []
-  DamageCausedKnockbackType: 1
-  DamageCausedKnockbackDirection: 0
-  DamageCausedKnockbackForce: {x: 10, y: 2}
-  InvincibilityDuration: 0.5
-  RepeatDamageOverTime: 0
-  AmountOfRepeats: 3
-  DurationBetweenRepeats: 1
-  DamageOverTimeInterruptible: 1
-  RepeatedDamageType: {fileID: 0}
-  DamageTakenEveryTime: 0
-  DamageTakenDamageable: 0
-  DamageTakenNonDamageable: 0
-  DamageTakenKnockbackType: 0
-  DamageTakenKnockbackDirection: 0
-  DamageTakenKnockbackForce: {x: 0, y: 0}
-  DamageTakenInvincibilityDuration: 0.5
-  HitDamageableFeedback: {fileID: 0}
-  HitNonDamageableFeedback: {fileID: 0}
-  FreezeFramesOnHitDuration: 0
   Owner: {fileID: 0}
---- !u!114 &6488488727509530964
+  States:
+  - StateName: Idle
+    Actions:
+      array:
+      - {fileID: 329043364312905569}
+    Transitions:
+      array:
+      - Decision: {fileID: 5074116967477098630}
+        TrueState: Shoot
+        FalseState: 
+  - StateName: Shoot
+    Actions:
+      array:
+      - {fileID: 4003778119207892237}
+    Transitions:
+      array:
+      - Decision: {fileID: 5074116967477098630}
+        TrueState: 
+        FalseState: Idle
+  TimeInThisState: 0
+  Target: {fileID: 0}
+  _lastKnownTargetPosition: {x: 0, y: 0, z: 0}
+  BrainActive: 1
+  ResetBrainOnStart: 1
+  ResetBrainOnEnable: 0
+  ActionsFrequency: 0
+  DecisionFrequency: 0
+  RandomizeFrequencies: 0
+  RandomActionFrequency: {x: 0.5, y: 1}
+  RandomDecisionFrequency: {x: 0.5, y: 1}
+--- !u!114 &329043364312905569
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -688,22 +693,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4997107258594313203}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 817e5a5fe0898ae4789b92ad0fb3cc01, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ce6650aa70b5cb49836740df729c5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InitializationMode: 0
   Label: 
-  DetectMethod: 0
-  DetectionDirection: 0
-  RayWidth: 1
-  DetectionDistance: 6
-  DetectionOriginOffset: {x: 0, y: 0, z: 0}
-  TargetLayer:
-    serializedVersion: 2
-    m_Bits: 512
-  ObstaclesLayer:
-    serializedVersion: 2
-    m_Bits: 264448
---- !u!114 &4686310184303738965
+--- !u!114 &4003778119207892237
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -718,6 +713,30 @@ MonoBehaviour:
   InitializationMode: 0
   Label: 
   FaceTarget: 1
-  AimAtTarget: 1
+  AimAtTarget: 0
   TargetOffset: {x: 0, y: 0, z: 0}
   TargetHandleWeapon: {fileID: 4691476543563214102}
+--- !u!114 &5074116967477098630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4997107258594313203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817e5a5fe0898ae4789b92ad0fb3cc01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Label: 
+  DetectMethod: 1
+  DetectionDirection: 0
+  RayWidth: 1
+  DetectionDistance: 7
+  DetectionOriginOffset: {x: 0, y: 0, z: 0}
+  TargetLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  ObstaclesLayer:
+    serializedVersion: 2
+    m_Bits: 264448

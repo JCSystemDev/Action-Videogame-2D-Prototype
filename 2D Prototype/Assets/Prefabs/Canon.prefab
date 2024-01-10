@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6303662233197259136}
   - component: {fileID: 5932114747489652890}
   - component: {fileID: 2009207780566401219}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,7 +50,7 @@ MonoBehaviour:
   InitializeOnStart: 0
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 0
-  TimeBetweenUses: 0.3
+  TimeBetweenUses: 0.25
   TimeBetweenUsesReleaseInterruption: 1
   CooldownDuration: 0
   UseBurstMode: 0
