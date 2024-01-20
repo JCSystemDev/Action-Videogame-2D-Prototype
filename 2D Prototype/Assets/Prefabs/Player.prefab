@@ -1017,10 +1017,13 @@ GameObject:
   - component: {fileID: 6359124523595150238}
   - component: {fileID: 7106590116131418112}
   - component: {fileID: 8143740919241968180}
+  - component: {fileID: 2550256423751830919}
   - component: {fileID: 1031843867157973601}
   - component: {fileID: 8053009240442983514}
   - component: {fileID: 5593392174155873692}
   - component: {fileID: 7023043151959289081}
+  - component: {fileID: 8672635731263977290}
+  - component: {fileID: 2609082625415485751}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -1088,8 +1091,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1628607475
+  m_SortingLayer: 4
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 5ce4928aefc34c34aa7da41d5825adb1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1578,9 +1581,36 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5934505119009341374}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eeabffc5d6e694a8287c891288b0a4be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 4640919158487884991}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  BlockingWeaponStates: 
+  WallJumpForce: {x: 10, y: 5}
+  ForceMode: 0
+  ForceFlipTowardsDirection: 1
+  ShouldReduceNumberOfJumpsLeft: 0
+  LimitNumberOfWalljumps: 0
+  MaximumNumberOfWalljumps: 3
+  NumberOfWalljumpsLeft: 0
+  AllowCoyoteTime: 0
+  CoyoteTimeDuration: 0.2
+--- !u!114 &2550256423751830919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5934505119009341374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51d7707613113491a9d85f1caab5837b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   AbilityStartFeedbacks: {fileID: 0}
@@ -1589,15 +1619,11 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  WallJumpForce: {x: 10, y: 4}
-  ForceMode: 0
-  ForceFlipTowardsDirection: 0
-  ShouldReduceNumberOfJumpsLeft: 1
-  LimitNumberOfWalljumps: 0
-  MaximumNumberOfWalljumps: 3
-  NumberOfWalljumpsLeft: 0
-  AllowCoyoteTime: 0
-  CoyoteTimeDuration: 0.2
+  WallClingingSlowFactor: 0.2
+  RaycastVerticalOffset: 0
+  WallClingingTolerance: 0.75
+  ResetVerticalForceOnEntry: 1
+  InputIndependent: 0
 --- !u!114 &1031843867157973601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1616,10 +1642,10 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  LadderClimbingSpeed: 5
+  LadderClimbingSpeed: 4
   ForceRightFacing: 0
-  ForceAnchorToGroundOnExit: 1
-  MinimumTimeAfterLadderJump: 0.25
+  ForceAnchorToGroundOnExit: 0
+  MinimumTimeAfterLadderJump: 0.1
   NoInputClimb: 0
   NoInputClimbAirOnly: 0
 --- !u!114 &8053009240442983514
@@ -1707,6 +1733,54 @@ MonoBehaviour:
   NewInputExtendsBuffer: 0
   MaximumBufferDuration: 0.25
   CurrentWeapon: {fileID: 0}
+--- !u!81 &8672635731263977290
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5934505119009341374}
+  m_Enabled: 1
+--- !u!114 &2609082625415485751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5934505119009341374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76891b3b532f84acaaeed44c357bd00c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetLayerMask:
+    serializedVersion: 2
+    m_Bits: 4096
+  ApplyDamageOnTriggerEnter: 1
+  ApplyDamageOnTriggerStay: 1
+  MinDamageCaused: 10
+  MaxDamageCaused: 10
+  TypedDamages: []
+  DamageCausedKnockbackType: 1
+  DamageCausedKnockbackDirection: 0
+  DamageCausedKnockbackForce: {x: 10, y: 2}
+  InvincibilityDuration: 0
+  RepeatDamageOverTime: 0
+  AmountOfRepeats: 3
+  DurationBetweenRepeats: 1
+  DamageOverTimeInterruptible: 1
+  RepeatedDamageType: {fileID: 0}
+  DamageTakenEveryTime: 0
+  DamageTakenDamageable: 0
+  DamageTakenNonDamageable: 0
+  DamageTakenKnockbackType: 0
+  DamageTakenKnockbackDirection: 0
+  DamageTakenKnockbackForce: {x: 0, y: 0}
+  DamageTakenInvincibilityDuration: 0.5
+  HitDamageableFeedback: {fileID: 0}
+  HitNonDamageableFeedback: {fileID: 0}
+  FreezeFramesOnHitDuration: 0
+  Owner: {fileID: 0}
 --- !u!1 &6347596282027693379
 GameObject:
   m_ObjectHideFlags: 0
