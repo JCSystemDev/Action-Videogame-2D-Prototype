@@ -49,9 +49,9 @@ MonoBehaviour:
   TriggerMode: 1
   Interruptable: 0
   InitializeOnStart: 0
-  DelayBeforeUse: 3
+  DelayBeforeUse: 4
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 3
+  TimeBetweenUses: 4
   TimeBetweenUsesReleaseInterruption: 1
   CooldownDuration: 0
   UseBurstMode: 0
@@ -175,7 +175,7 @@ MonoBehaviour:
   MutualizeWaitingPools: 0
   NestWaitingPool: 1
   NestUnderThis: 0
-  GameObjectToPool: {fileID: 3419801015337604851, guid: 48f18ac7337713a45ac186b82dc2deeb,
+  GameObjectToPool: {fileID: 3419801015337604851, guid: 6abc3b109d4282a418997a09221e7b04,
     type: 3}
   PoolSize: 5
   PoolCanExpand: 1
@@ -376,7 +376,7 @@ MonoBehaviour:
         RemapRangeFalloff: {x: 0, y: 1}
         Owner: {fileID: 1606683522842316956}
         DebugActive: 0
-        Sfx: {fileID: 8300000, guid: fafc2274ffe02c9498cbc164edbcfc5c, type: 3}
+        Sfx: {fileID: 8300000, guid: 4dab460a8b8ee39429147562ea118a48, type: 3}
         RandomSfx: []
         TestPlayButton:
           ButtonText: Debug Play Sound

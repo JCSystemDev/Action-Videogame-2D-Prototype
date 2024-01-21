@@ -49,9 +49,9 @@ MonoBehaviour:
   TriggerMode: 1
   Interruptable: 0
   InitializeOnStart: 0
-  DelayBeforeUse: 5
+  DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 5
+  TimeBetweenUses: 0.5
   TimeBetweenUsesReleaseInterruption: 1
   CooldownDuration: 0
   UseBurstMode: 0
@@ -156,7 +156,7 @@ MonoBehaviour:
   ProjectileSpawnOffset: {x: 0, y: 0, z: 0}
   ProjectilesPerShot: 1
   Spread: {x: 0, y: 0, z: 0}
-  RotateWeaponOnSpread: 1
+  RotateWeaponOnSpread: 0
   RandomSpread: 0
   ObjectPooler: {fileID: 7692112966600553004}
   SpawnPosition: {x: 0, y: 0, z: 0}
@@ -175,7 +175,7 @@ MonoBehaviour:
   MutualizeWaitingPools: 0
   NestWaitingPool: 1
   NestUnderThis: 0
-  GameObjectToPool: {fileID: 3419801015337604851, guid: 6abc3b109d4282a418997a09221e7b04,
+  GameObjectToPool: {fileID: 4852315030165054700, guid: a30ff13e20356f040a1298d71d9f2f5b,
     type: 3}
   PoolSize: 5
   PoolCanExpand: 1
@@ -376,7 +376,7 @@ MonoBehaviour:
         RemapRangeFalloff: {x: 0, y: 1}
         Owner: {fileID: 392267346548578166}
         DebugActive: 0
-        Sfx: {fileID: 8300000, guid: 4dab460a8b8ee39429147562ea118a48, type: 3}
+        Sfx: {fileID: 8300000, guid: 67b4b227d30367b4390ecdf81c97a873, type: 3}
         RandomSfx: []
         TestPlayButton:
           ButtonText: Debug Play Sound

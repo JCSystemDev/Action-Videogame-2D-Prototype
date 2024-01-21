@@ -133,7 +133,7 @@ MonoBehaviour:
       m_Calls: []
   LifeTime: 1.5
   FaceDirection: 1
-  Speed: 250
+  Speed: 200
   Acceleration: 0
   Direction: {x: -1, y: 1, z: 1}
   DirectionCanBeChangedBySpawner: 1

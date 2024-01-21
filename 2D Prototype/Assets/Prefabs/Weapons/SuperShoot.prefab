@@ -133,10 +133,10 @@ MonoBehaviour:
       m_Calls: []
   LifeTime: 1.5
   FaceDirection: 1
-  Speed: 200
+  Speed: 260
   Acceleration: 0
-  Direction: {x: -1, y: 1, z: 1}
-  DirectionCanBeChangedBySpawner: 1
+  Direction: {x: -1, y: 0, z: 1}
+  DirectionCanBeChangedBySpawner: 0
   FlipValue: {x: -1, y: 1, z: 1}
   ProjectileIsFacingRight: 1
   InitialInvulnerabilityDuration: 0
@@ -234,8 +234,8 @@ MonoBehaviour:
     m_Bits: 768
   ApplyDamageOnTriggerEnter: 1
   ApplyDamageOnTriggerStay: 1
-  MinDamageCaused: 25
-  MaxDamageCaused: 25
+  MinDamageCaused: 20
+  MaxDamageCaused: 20
   TypedDamages: []
   DamageCausedKnockbackType: 0
   DamageCausedKnockbackDirection: 0

@@ -175,7 +175,7 @@ MonoBehaviour:
   MutualizeWaitingPools: 0
   NestWaitingPool: 1
   NestUnderThis: 0
-  GameObjectToPool: {fileID: 3419801015337604851, guid: 88fc013e5672fa44c9050f368145a489,
+  GameObjectToPool: {fileID: 3419801015337604851, guid: 48f18ac7337713a45ac186b82dc2deeb,
     type: 3}
   PoolSize: 5
   PoolCanExpand: 1
@@ -376,7 +376,7 @@ MonoBehaviour:
         RemapRangeFalloff: {x: 0, y: 1}
         Owner: {fileID: 8756715135012140805}
         DebugActive: 0
-        Sfx: {fileID: 8300000, guid: dfdd826fdc295094db11bef0f88bb77f, type: 3}
+        Sfx: {fileID: 8300000, guid: fafc2274ffe02c9498cbc164edbcfc5c, type: 3}
         RandomSfx: []
         TestPlayButton:
           ButtonText: Debug Play Sound
