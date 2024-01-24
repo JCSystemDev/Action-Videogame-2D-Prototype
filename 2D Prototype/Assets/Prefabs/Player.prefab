@@ -1594,7 +1594,7 @@ MonoBehaviour:
   BlockingWeaponStates: 
   WallJumpForce: {x: 10, y: 5}
   ForceMode: 0
-  ForceFlipTowardsDirection: 1
+  ForceFlipTowardsDirection: 0
   ShouldReduceNumberOfJumpsLeft: 0
   LimitNumberOfWalljumps: 0
   MaximumNumberOfWalljumps: 3

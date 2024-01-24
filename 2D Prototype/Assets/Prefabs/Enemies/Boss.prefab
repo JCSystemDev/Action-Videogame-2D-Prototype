@@ -1377,7 +1377,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  InitialWeapon: {fileID: 8699689908052989559, guid: 2b4297e53cb68a64ababc0f043158444,
+  InitialWeapon: {fileID: 8298935355965489157, guid: b9f0de68f6c466247a00ecf588b4dbca,
     type: 3}
   CanPickupWeapons: 0
   WeaponAttachment: {fileID: 0}
@@ -1526,7 +1526,7 @@ MonoBehaviour:
   DetectMethod: 1
   DetectionDirection: 0
   RayWidth: 5
-  DetectionDistance: 7
+  DetectionDistance: 20
   DetectionOriginOffset: {x: 0, y: -2, z: 0}
   TargetLayer:
     serializedVersion: 2
@@ -2114,7 +2114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DefaultParameters:
-    Gravity: -30
+    Gravity: 0
     FallMultiplier: 1
     AscentMultiplier: 1
     MaxVelocity: {x: 100, y: 100}
@@ -2798,8 +2798,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7888433217970502273}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.880238, y: -13.367831, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

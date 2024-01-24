@@ -532,7 +532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59d042072253d11428147ba0d074fa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelName: Gameplay
+  LevelName: Menu
   Fade: 1
   Save: 1
 --- !u!114 &742471601
@@ -1384,23 +1384,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 88}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1108971615395626
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4365644780882964}
-  - component: {fileID: 114697663312348690}
-  m_Layer: 0
-  m_Name: RetroAdventureProgressManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1815778738847999
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,21 +1404,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4365644780882964
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108971615395626}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -78.91384, y: 2.3617, z: 1.6593261}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &114139160714757477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1466,45 +1434,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &114697663312348690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108971615395626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf05f7dd8e4220748a9c4f4f6a2bc9a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Scenes:
-  - SceneName: RetroAdventure1
-    LevelComplete: 1
-    LevelUnlocked: 1
-    MaxStars: 3
-    CollectedStars: 000000
-  - SceneName: RetroAdventure2
-    LevelComplete: 0
-    LevelUnlocked: 0
-    MaxStars: 3
-    CollectedStars: 000000
-  - SceneName: RetroAdventure3
-    LevelComplete: 0
-    LevelUnlocked: 0
-    MaxStars: 3
-    CollectedStars: 000000
-  - SceneName: RetroAdventure4
-    LevelComplete: 0
-    LevelUnlocked: 0
-    MaxStars: 3
-    CollectedStars: 000000
-  - SceneName: RetroAdventure5
-    LevelComplete: 0
-    LevelUnlocked: 0
-    MaxStars: 3
-    CollectedStars: 000000
-  CreateSaveGameBtn: 0
 --- !u!114 &114758525359927785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2113,5 +2042,4 @@ SceneRoots:
   - {fileID: 3861961495512690922}
   - {fileID: 1896010361}
   - {fileID: 1922292915}
-  - {fileID: 4365644780882964}
   - {fileID: 1420900565}

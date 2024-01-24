@@ -49,9 +49,9 @@ MonoBehaviour:
   TriggerMode: 1
   Interruptable: 0
   InitializeOnStart: 0
-  DelayBeforeUse: 4
+  DelayBeforeUse: 3
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 4
+  TimeBetweenUses: 3
   TimeBetweenUsesReleaseInterruption: 1
   CooldownDuration: 0
   UseBurstMode: 0
