@@ -353,6 +353,7 @@ GameObject:
   - component: {fileID: 5212629672194000381}
   - component: {fileID: 5732016833922167787}
   - component: {fileID: 2459487043115795031}
+  - component: {fileID: -7899697566097023556}
   m_Layer: 13
   m_Name: Enemy01
   m_TagString: Untagged
@@ -806,3 +807,17 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   ResetPositionOnDeath: 1
+--- !u!114 &-7899697566097023556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8974177672986027163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e71ad30bf1524741b90c1bd0354e1e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeDestructionMode: 1
+  TimeBeforeDestruction: 10

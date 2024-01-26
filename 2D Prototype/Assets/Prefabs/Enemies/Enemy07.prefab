@@ -354,6 +354,7 @@ GameObject:
   - component: {fileID: 6761330593315976783}
   - component: {fileID: 630666946376048168}
   - component: {fileID: 2464701437008841536}
+  - component: {fileID: -7607290103691855012}
   m_Layer: 13
   m_Name: Enemy07
   m_TagString: Untagged
@@ -860,3 +861,17 @@ MonoBehaviour:
   TargetLayerMask:
     serializedVersion: 2
     m_Bits: 512
+--- !u!114 &-7607290103691855012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6682003237496574267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e71ad30bf1524741b90c1bd0354e1e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeDestructionMode: 1
+  TimeBeforeDestruction: 15

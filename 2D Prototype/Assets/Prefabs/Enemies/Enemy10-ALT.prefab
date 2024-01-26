@@ -607,6 +607,7 @@ GameObject:
   - component: {fileID: -8519888040948779337}
   - component: {fileID: 1069459382245971508}
   - component: {fileID: 1153603397111858085}
+  - component: {fileID: 3094098057395993431}
   m_Layer: 13
   m_Name: Enemy10-ALT
   m_TagString: Untagged
@@ -1114,3 +1115,17 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 264448
   ResetPositionOnDeath: 1
+--- !u!114 &3094098057395993431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2593333204630345512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e71ad30bf1524741b90c1bd0354e1e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeDestructionMode: 1
+  TimeBeforeDestruction: 8

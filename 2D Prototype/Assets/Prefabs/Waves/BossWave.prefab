@@ -937,8 +937,8 @@ MonoBehaviour:
   Label: 
   DetectMethod: 1
   DetectionDirection: 0
-  RayWidth: 5
-  DetectionDistance: 32
+  RayWidth: 8
+  DetectionDistance: 40
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   TargetLayer:
     serializedVersion: 2
@@ -2000,7 +2000,7 @@ Transform:
   m_GameObject: {fileID: 3514036478571665692}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: 0, z: 0}
+  m_LocalPosition: {x: -8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2744,8 +2744,8 @@ MonoBehaviour:
   Label: 
   DetectMethod: 1
   DetectionDirection: 0
-  RayWidth: 5
-  DetectionDistance: 32
+  RayWidth: 8
+  DetectionDistance: 40
   DetectionOriginOffset: {x: 0, y: -2, z: 0}
   TargetLayer:
     serializedVersion: 2
@@ -3248,8 +3248,8 @@ MonoBehaviour:
   Label: 
   DetectMethod: 1
   DetectionDirection: 0
-  RayWidth: 5
-  DetectionDistance: 32
+  RayWidth: 8
+  DetectionDistance: 40
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   TargetLayer:
     serializedVersion: 2
@@ -3636,7 +3636,7 @@ PrefabInstance:
     - target: {fileID: 7994209893424260887, guid: 041b763fc1b91e4428fe1e7b4de1313c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 7994209893424260887, guid: 041b763fc1b91e4428fe1e7b4de1313c,
         type: 3}
